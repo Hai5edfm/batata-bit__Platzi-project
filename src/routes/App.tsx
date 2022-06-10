@@ -1,12 +1,15 @@
-import React from 'react'
-import { Hero } from '../components/Hero'
-import '../styles/index.scss'
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import '@src/styles/index.scss'
+
+import Landing from '@src/pages/Landing'
 
 function App() {
   return (
-    <React.Fragment>
-      <Hero/>
-    </React.Fragment>
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<Landing/>}/>
+      </Routes>
+    </BrowserRouter>
   )
 }
 

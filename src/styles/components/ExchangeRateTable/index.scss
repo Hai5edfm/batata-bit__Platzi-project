@@ -1,0 +1,15 @@
+@import '../../variables.scss';
+
+table {
+  & .Coins-table__header {
+    color: $primary-color;
+    font-size: 2rem;
+  }
+  & .Commisions-table__header {
+    color: $secondary-color;
+    font-size: 2rem;
+  }
+}
+
+// color: $complementary-color__orange-soft;
+// color: $complementary-color__blue-soft;

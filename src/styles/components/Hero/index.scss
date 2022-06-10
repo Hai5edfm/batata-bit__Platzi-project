@@ -1,0 +1,31 @@
+@import "../../variables.scss";
+
+.hero-container {
+  background-image: linear-gradient(204deg,$warm-black 10%, $primary-color);
+  width: 100%;
+  max-width: 100vw;
+  height: 300px;
+  display: inline-block;
+  text-align: center;
+  position: relative;
+  & .hero-container__info {
+    margin: 40px auto 60px;
+    max-width: 560px;
+    padding: 0 16px;
+  }
+  & h1 {
+    color: $primary-color;
+    font-size: 2.6rem;
+    & svg {
+      margin-inline-end: 8px;
+    }
+  }
+  & h2 {
+    color: $light-color;
+    font-size: 2.6rem;
+  }
+  & p {
+    color: $complementary-color__orange-soft;
+    font-size: 1.6rem;
+  }
+}

@@ -1,0 +1,13 @@
+@import '../../variables.scss';
+.trend-up {
+  transform: rotateX(180deg);
+  & path {
+    stroke: $trending-up-color;
+  }
+}
+
+.trend-down {
+  & path {
+    stroke: $trending-down-color;
+  }
+}
