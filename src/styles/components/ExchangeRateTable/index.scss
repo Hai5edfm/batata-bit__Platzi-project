@@ -1,6 +1,9 @@
 @import '../../variables.scss';
 
 table {
+  height: 240px;
+  max-width: 250px;
+  margin: 0 auto;
   & .Coins-table__header {
     color: $primary-color;
     font-size: 2rem;
@@ -9,7 +12,23 @@ table {
     color: $secondary-color;
     font-size: 2rem;
   }
+  & tbody {
+    font-size: 1.4rem;
+    & .table__name {
+      font-size: 1.6rem;
+    }
+  }
+  & tfoot {
+    font-size: 1.2rem;
+    & tr td {
+      padding: 8px;
+      border-radius: 8px;
+    }
+    & .Coins-table__footer {
+      background-color: $complementary-color__orange-soft;
+    }
+    & .Commisions-table__footer {
+      background-color: $complementary-color__blue-soft;
+    }
+  }
 }
-
-// color: $complementary-color__orange-soft;
-// color: $complementary-color__blue-soft;

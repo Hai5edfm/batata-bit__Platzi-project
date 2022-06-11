@@ -1,0 +1,41 @@
+@import '../../variables.scss';
+
+.Exchange-section {
+  & h2 {
+    text-align: center;
+    color: $warm-black;
+    font-size: 2.4rem;
+    line-height: 2.6rem;
+  }
+  & p {
+    text-align: center;
+    font-size: 1.4rem;
+    line-height: 1.8rem;
+  }
+  & article {
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    & .Exchange-tables {
+      width: 100%;
+      max-width: 320px;
+      display: flex;
+      align-items: center;
+      & div {
+        min-width: 180px;
+      }
+      & span {
+        margin-inline: 30px;
+      }
+    }
+    & .coins-InView {
+      justify-content: flex-end;
+    }
+    & .commisions-InView {
+      justify-content: flex-start;
+      & span {
+        margin-inline: 35px;
+      }
+    }
+  }
+}

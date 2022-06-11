@@ -31,7 +31,13 @@ export const ExchangeRateTable: FC<ExchangeTableProps> = ({title, rows}: Exchang
           </tr>
         ))}
       </tbody>
-      <tfoot>Valores en <span>$ USD</span></tfoot>
+      <tfoot>
+        <tr>
+          <td className={`${title}-table__footer`}>
+            Valores en <strong>$ USD</strong>
+          </td>
+        </tr>
+      </tfoot>
     </table>
   );
 };
