@@ -1,6 +1,6 @@
 import { FC } from 'react';
-import { ArrowTrend } from '../ArrowTrend';
-import '@src/styles/components/ExchangeRateTable/index.scss'
+import { ArrowTrend } from '../Icons/ArrowTrend';
+import '@src/styles/components/ExchangeRateTable/index.scss';
 
 type ExchangeRateRow = {
   name: string,

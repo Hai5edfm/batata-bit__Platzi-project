@@ -3,8 +3,8 @@
 table {
   height: 240px;
   max-width: 250px;
-  margin: 0 auto;
   & .Coins-table__header {
+    text-align: left;
     color: $primary-color;
     font-size: 2rem;
   }

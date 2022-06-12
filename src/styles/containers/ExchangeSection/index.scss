@@ -1,41 +1,55 @@
 @import '../../variables.scss';
 
 .Exchange-section {
+  padding-block: 70px;
+  padding-inline: 15px;
   & h2 {
     text-align: center;
     color: $warm-black;
     font-size: 2.4rem;
     line-height: 2.6rem;
+    margin-block-end: 24px;
   }
   & p {
     text-align: center;
     font-size: 1.4rem;
     line-height: 1.8rem;
+    margin-block-end: 48px;
   }
   & article {
     margin: 0 auto;
     display: flex;
     justify-content: center;
     & .Exchange-tables {
+      position: relative;
       width: 100%;
       max-width: 320px;
       display: flex;
       align-items: center;
+      justify-content: center;
       & div {
         min-width: 180px;
       }
       & span {
-        margin-inline: 30px;
+        padding: 5px;
+        cursor: pointer;
+      }
+      & .buttonHidden {
+        display: none;
+      }
+      & .prev {
+        position: absolute;
+        left: 10px
+      }
+      & .next {
+        position: absolute;
+        right: 10px
       }
     }
-    & .coins-InView {
-      justify-content: flex-end;
-    }
-    & .commisions-InView {
-      justify-content: flex-start;
-      & span {
-        margin-inline: 35px;
-      }
-    }
+  }
+  & .BitcoinImg {
+    display: flex;
+    justify-content: center;
+    margin-block-end: 40px;
   }
 }

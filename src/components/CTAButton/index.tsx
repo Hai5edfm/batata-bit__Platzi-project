@@ -1,5 +1,5 @@
 import { FC } from 'react';
-import { ArrowButton } from '@src/components/ArrowButton';
+import { ArrowButton } from '@src/components/Icons/ArrowButton';
 import '@src/styles/components/CTAButton/index.scss'
 
 export const CTAButton: FC = () => {

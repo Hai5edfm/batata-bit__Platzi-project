@@ -1,7 +1,7 @@
 import { FC } from 'react';
 import { CTAButton } from '@src/components/CTAButton';
 import '@src/styles/components/Hero/index.scss'
-import { MainIsotype } from '../MainIsotype';
+import { MainIsotype } from '../Icons/MainIsotype';
 
 export const Hero: FC = () => {
   return(
