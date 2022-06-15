@@ -1,0 +1,11 @@
+@import '../../variables.scss';
+
+
+.Intersection-img--container {
+  display: flex;
+  justify-content: center;
+  padding-block-end: 65px;
+  width: 100%;
+  background-color: $warm-black;
+}
+

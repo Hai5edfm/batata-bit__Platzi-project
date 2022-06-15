@@ -3,6 +3,8 @@ import '@src/styles/pages/Landing.scss'
 import { Hero } from '@src/components/Hero';
 import { ExchangeSection } from '@src/containers/ExchangeSection';
 import { CharacteristicsSection } from '@src/containers/CharacteristicsSection';
+import { IntersectionIMG } from '@src/components/IntersectionIMG';
+import { PlansSection } from '@src/containers/PlansSection';
 
 const Landing: FC = () => {
 
@@ -12,6 +14,8 @@ const Landing: FC = () => {
       <main>
         <ExchangeSection/>
         <CharacteristicsSection/>
+        <IntersectionIMG/>
+        <PlansSection/>
       </main>
     </React.Fragment>
   );
