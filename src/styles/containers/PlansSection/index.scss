@@ -1,7 +1,18 @@
 @import '../../variables.scss';
 
 .PlansSection-container {
-  width: 100%;
+  width: 100vw;
   height: 100%;
-  padding: 80px 16px 10px;
+  max-width: 95%;
+  margin: 0 auto;
+  padding: 30px 5px 40px;
+  text-align: center;
+  & .PlansSection--title {
+    font-size: 2.4rem;
+    line-height: 2.6rem;
+  }
+  & .PlansSection--description {
+    font-size: 1.6rem;
+    line-height: 2rem;
+  }
 }

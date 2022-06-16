@@ -1,0 +1,15 @@
+@import '../../variables.scss';
+
+.PlansCards-container {
+  max-width: 600px;
+  margin: 0 auto;
+  &::-webkit-scrollbar {
+    display: none;
+  }
+}
+
+@media (min-width: 680px) {
+  .PlansCards-container {
+    display: flex;
+  }
+}
