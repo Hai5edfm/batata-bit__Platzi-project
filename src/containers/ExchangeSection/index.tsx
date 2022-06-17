@@ -33,7 +33,7 @@ export const ExchangeSection: FC = () => {
       <h2>Visibilizamos todas las tasas de cambio.</h2>
       <p>Traemos información en tiempo real de las casas de cambio y las monedas más importantes del mundo.</p>
       <article>
-        <div className="Exchange-tables">
+        <div className="Exchange-tables mobile-size">
           <span className={`prev ${table == "coins" ? 'buttonHidden' : ''}`} 
             onClick={() => { if(table == "commisions") return setTable("coins") }
           }>
@@ -47,6 +47,10 @@ export const ExchangeSection: FC = () => {
           }>
             <ArrowButton color="#201E1C" rotate='right'/>
           </span>
+        </div>
+        <div className="Exchange-tables tablet-size">
+           <ExchangeRateTable title='Coins' rows={coins}/>
+           <ExchangeRateTable title='Commisions' rows={commisions}/>
         </div>
       </article>
     </section>

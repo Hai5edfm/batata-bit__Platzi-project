@@ -46,10 +46,31 @@
         right: 10px
       }
     }
+    & .tablet-size {
+      display: none
+    }
   }
   & .BitcoinImg {
     display: flex;
     justify-content: center;
     margin-block-end: 40px;
+  }
+}
+
+@media (min-width: 650px) {
+  .Exchange-section {
+    & article {
+      & .mobile-size {
+        display: none;
+      }
+      & .tablet-size {
+        display: flex;
+        max-width: none;
+        & table {
+          margin-inline: 40px;
+          max-width: 400px;
+        }
+      }
+    }
   }
 }

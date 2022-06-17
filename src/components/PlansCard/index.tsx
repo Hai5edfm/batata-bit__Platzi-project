@@ -1,5 +1,6 @@
 import { FC } from 'react';
 import '@src/styles/components/PlansCard/index.scss';
+import { LinkButtonIcon } from '../Icons/LinkButtonIcon';
 
 type PlansCardData = {
   recommended?: boolean,
@@ -15,7 +16,7 @@ export const PlansCard: FC<PlansCardData> = ({recommended, plan, price, descript
       <h4>{plan}</h4>
       <p className="card--price"><span className='dollarSign'>$</span>{price}</p>
       <p className="card--description">{description}</p>
-      <a href='#' className='choosePlan-button'/>
+      <a href='#' className='choosePlan-button'> Choose this plan <LinkButtonIcon/></a>
     </div>
   );
 };

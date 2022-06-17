@@ -5,6 +5,8 @@ import { ExchangeSection } from '@src/containers/ExchangeSection';
 import { CharacteristicsSection } from '@src/containers/CharacteristicsSection';
 import { IntersectionIMG } from '@src/components/IntersectionIMG';
 import { PlansSection } from '@src/containers/PlansSection';
+import { FAQSection } from '@src/containers/FAQSection';
+import { Footer } from '@src/containers/Footer';
 
 const Landing: FC = () => {
 
@@ -16,7 +18,9 @@ const Landing: FC = () => {
         <CharacteristicsSection/>
         <IntersectionIMG/>
         <PlansSection/>
+        <FAQSection/>
       </main>
+      <Footer/>
     </React.Fragment>
   );
 };

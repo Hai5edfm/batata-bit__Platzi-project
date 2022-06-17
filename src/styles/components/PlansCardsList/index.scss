@@ -1,14 +1,11 @@
 @import '../../variables.scss';
 
 .PlansCards-container {
-  max-width: 600px;
+  max-width: 750px;
   margin: 0 auto;
-  &::-webkit-scrollbar {
-    display: none;
-  }
 }
 
-@media (min-width: 680px) {
+@media (min-width: 650px) {
   .PlansCards-container {
     display: flex;
   }

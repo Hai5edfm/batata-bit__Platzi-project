@@ -20,7 +20,7 @@
     font-size: 1.6rem;
     padding: 8px;
     border-radius: 8px;
-    color: $light-color;
+    color: #FFF;
     background-color: $primary-color;
   }
   & h4 {
@@ -41,5 +41,19 @@
   }
   & .card--description {
     font-size: 1.4rem;
+  }
+  & .choosePlan-button {
+    padding: 15px 40px 15px 15px;
+    background-color: $complementary-color__orange-soft;
+    border: 2px solid $primary-color;
+    border-radius: 4px;
+    font-size: 1.6rem;
+    position: relative;
+    & svg {
+      position: absolute;
+      top: 50%;
+      right: 10px;
+      transform: translateY(-50%);
+    }
   }
 }
