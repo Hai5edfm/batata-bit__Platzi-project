@@ -9,7 +9,6 @@
     "test": "jest"
   },
   "dependencies": {
-    "framer-motion": "^6.3.10",
     "react": "^18.0.0",
     "react-dom": "^18.0.0",
     "react-router-dom": "^6.3.0"

@@ -1,8 +1,12 @@
-import { FC } from 'react';
+import { Dispatch, FC, SetStateAction } from 'react';
 import { PlansCard } from '@src/components/PlansCard';
 import '@src/styles/components/PlansCardsList/index.scss';
 
-export const PlansCardsList: FC = () => {
+export type PlansCardsListData = {
+  setPlanPayment: Dispatch<SetStateAction<{ planTitle: string, planPrice: number } | null>>;
+}
+
+export const PlansCardsList: FC<PlansCardsListData> = ({setPlanPayment}:PlansCardsListData) => {
   const CardsData = [
     {plan: "Pago Anual", price: 5, description: "*Plan básico para mantenerte informado"},
     {recommended: true, plan: "Pago Anual", price: 49, description:"*Ahorras $129 comparado al plan mensual."},
@@ -12,7 +16,7 @@ export const PlansCardsList: FC = () => {
   return(
     <div className="PlansCards-container">
       {CardsData.map((card, i) => (
-        <PlansCard key={i} recommended={card?.recommended} plan={card.plan} price={card.price} description={card.description}/>
+        <PlansCard key={i} recommended={card?.recommended} plan={card.plan} price={card.price} description={card.description} setPlanPayment={setPlanPayment}/>
       ))}
     </div>
   );

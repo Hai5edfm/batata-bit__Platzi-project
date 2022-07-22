@@ -6,7 +6,7 @@ export const FAQSection: FC = () => {
 
   return(
     <section className='FAQSection'>
-      <h3>Questions? we are here for you.</h3>
+      <h3>¿Preguntas? Estamos aquí para ti.</h3>
       <FAQList/>
     </section>
   );
