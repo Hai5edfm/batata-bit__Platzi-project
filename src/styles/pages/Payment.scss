@@ -1,0 +1,32 @@
+@import '../variables.scss';
+
+.header {
+    background-color: $primary-color;
+    color: $light-color;
+    height: 40px;
+    & a {
+        display: flex;
+        align-items: center;
+        background-color: $primary-color;
+        border-radius: 0;
+        height: 40px;
+        width: 80px;
+        padding-inline: 4px;
+        font-size: 2rem;
+        &:hover {
+            background-color: $complementary-color__orange-soft;
+            color: $primary-color;
+            cursor: pointer;
+        }
+    }
+}
+
+main {
+    padding-inline: 20px;
+    & h2 {
+        font-size: 2.2rem;
+        font-weight: bold;
+        margin-bottom: 1rem;
+    }
+}
+

@@ -7,10 +7,24 @@ table {
     text-align: left;
     color: $primary-color;
     font-size: 2rem;
+    & tr th {
+      background-color: #FFF;
+      border: 1px solid rgba($soft-warm-black, 0.25);
+      border-bottom: 2px solid $primary-color;
+      padding: 6px;
+      border-radius: 8px;
+    }
   }
   & .Commisions-table__header {
     color: $secondary-color;
     font-size: 2rem;
+    & tr th {
+      background-color: #FFF;
+      border: 1px solid rgba($soft-warm-black, 0.25);
+      border-bottom: 2px solid $secondary-color;
+      padding: 6px;
+      border-radius: 8px;
+    }
   }
   & tbody {
     font-size: 1.4rem;

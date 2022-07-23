@@ -7,12 +7,12 @@
   max-width: 600px;
   margin: 0 auto;
   height: 300px;
-  & div {
+  & li {
     cursor: pointer;
     border: 1px solid rgba($soft-warm-black, 0.2);
     border-radius: 4px;
     padding-block: 10px;
-    & li {
+    & div {
       height: 40px;
       display: flex;
       justify-content: space-between;

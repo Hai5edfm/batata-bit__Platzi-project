@@ -14,16 +14,16 @@ export const FAQList: FC = () => {
   return(
     <ul className='FAQList'>
       {FAQs.map(question => (
-        <div key={question.question} onClick={() => 
+        <li key={question.question} onClick={() => 
           questionSelected == question.question
           ? setQuestionSelected('')
           : setQuestionSelected(`${question.question}`)}>
-          <li>
+          <div>
               <span>{question.question}</span>
               <ArrowButton color="#201E1C" rotate='bottom'/>
-          </li>
+          </div>
           {questionSelected == question.question && <p>{question.answer}</p>}
-        </div>
+        </li>
       ))}
     </ul>
   );
