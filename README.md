@@ -7,7 +7,7 @@
 <div>
   <p>
     Batata bit is website where you can see clear data in terms of crypto currencies. This website offers its services as a consulting company / community
-    to help you to make better desitions with complete information based on the real market.
+    to help you to make better decisions with complete information based on the real market.
     This project/repository is a landing page design for batata bit, in order of practicing and enhancing certain abilities such as:
     <ul>
       <li>Responsive layout</li>
