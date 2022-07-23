@@ -11,18 +11,45 @@ export const Payment: FC = () => {
     return (
         <React.Fragment>
             <header className='header'>
-                <Link to="/" children='go back'/>
+                <Link to="/#PlansSection" children='go back'/>
             </header>
-            <main>
-                <div className='planPayment-container'>
-                    <h2>{selectedPlan?.plan}</h2>
+            <main className='payment-container'>
+                <div className='plan-info'>
+                    <div className='planPayment-title'>
+                        <h2>{selectedPlan?.plan}</h2>
+                    </div>
+                    <div className='planPayment-description'>
+                        <p>{selectedPlan?.saving}</p>
+                        <p>{selectedPlan?.description}</p>
+                    </div>
                 </div>
-                <div className='planPayment-description'>
-                    <p>{selectedPlan?.saving}</p>
-                    <p>{selectedPlan?.description}</p>
-                </div>
-                <div className='planPayment-price'>
-                    <h3>{selectedPlan?.price}</h3>
+                <div className='payment-section'>
+                    <form>
+                        <div className='form-field'>
+                            <label htmlFor='cardNumber'>Card Number</label>
+                            <input type='text' id='cardNumber'/>
+                        </div>
+                        <div className='form-field'>
+                            <label htmlFor='cardName'>Card Name</label>
+                            <input type='text' id='cardName'/>
+                        </div>
+                        <div className='form-field'>
+                            <label htmlFor='expirationDate'>Expiration Date</label>
+                            <input type='text' id='expirationDate'/>
+                        </div>
+                        <div className='form-field'>
+                            <label htmlFor='cvv'>CVV</label>
+                            <input type='text' id='cvv'/>
+                        </div>
+                        <div className='form-field'>
+                            <input type="submit" value="Suscribirse"
+                            className='submit-button'/>
+                        </div>
+                    </form>
+                    <div className='planPayment-price'>
+                        <h3><span>$</span>{selectedPlan?.price}<span>*</span></h3>
+                        <p>* precios en $USD</p>
+                    </div>
                 </div>
             </main>
         </React.Fragment>

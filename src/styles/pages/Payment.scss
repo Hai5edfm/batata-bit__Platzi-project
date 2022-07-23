@@ -21,12 +21,75 @@
     }
 }
 
-main {
-    padding-inline: 20px;
-    & h2 {
-        font-size: 2.2rem;
-        font-weight: bold;
-        margin-bottom: 1rem;
+.payment-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    .plan-info {
+        margin-block-start: 24px;
+        padding: 20px;
+        background-color: #FFF;
+        border-radius: 10px;
+        & .planPayment-title {
+            & h2 {
+                font-size: 2.2rem;
+                font-weight: bold;
+                margin-bottom: 1rem;
+            }
+        }
+        & .planPayment-description {
+            & p {
+                font-size: 1.4rem;
+            }
+        }
+    }
+    & .payment-section {
+        display: flex;
+        margin-block-start: 60px;
+        & form {
+            max-width: 400px;
+            margin-inline-end: 60px;
+            & .form-field {
+                display: flex;
+                flex-direction: column;
+                margin-block-end: 1rem;
+                font-size: 1.4rem;
+                & input {
+                    padding: 0.5rem;
+                    margin-block-start: 4px;
+                    &:focus {
+                        outline-color: $primary-color;
+                    }
+                }
+                .submit-button {
+                    background-color: $primary-color;
+                    border-radius: 0;
+                    border: none;
+                    font-size: 1.4rem;
+                    padding: 0.5rem;
+                    font-weight: 600;
+                    &:hover {
+                        background-color: $complementary-color__orange-soft;
+                        border: 2px solid $primary-color;
+                        color: $warm-black;
+                        cursor: pointer;
+                    }
+                }
+            }
+        }
+        & .planPayment-price {
+            & h3 {
+                font-size: 4.8rem;
+                font-weight: bold;
+                & span {
+                    font-size: 1.8rem;
+                }
+            }
+            & p {
+                font-size: 1.4rem;
+            }
+        }
     }
 }
 
