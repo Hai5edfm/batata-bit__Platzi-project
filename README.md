@@ -21,9 +21,9 @@
     <a href="https://platzi.com/cursos/mobile-first/">Responsive Design Course: Mobile First</a> in Platzi.
   </p>
   <div>
-    <img width="280" src="https://user-images.githubusercontent.com/79668074/180617026-fd882087-15bf-45ce-8b17-106a74a4bf59.png"/>
-    <img width="300" src="https://user-images.githubusercontent.com/79668074/180617196-ba66b0ab-2857-45eb-b8c8-f77b01a9582c.png"/>
-    <img width="370" src="https://user-images.githubusercontent.com/79668074/180617354-fb2edf2c-a87c-49b9-a8d8-9fb2062f5e12.png"/>
+    <img width="260" src="https://user-images.githubusercontent.com/79668074/180617026-fd882087-15bf-45ce-8b17-106a74a4bf59.png"/>
+    <img width="280" src="https://user-images.githubusercontent.com/79668074/180617196-ba66b0ab-2857-45eb-b8c8-f77b01a9582c.png"/>
+    <img width="350" src="https://user-images.githubusercontent.com/79668074/180617354-fb2edf2c-a87c-49b9-a8d8-9fb2062f5e12.png"/>
   </div>
 </div>
 
